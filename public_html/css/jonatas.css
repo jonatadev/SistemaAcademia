@@ -1,0 +1,27 @@
+/*
+Link documentação bootstrap:
+https://getbootstrap.com/docs/3.3/getting-started/#download
+
+https://www.w3schools.com/bootstrap/
+Exemplos:
+https://adminlte.io/themes/AdminLTE/index2.html
+https://startbootstrap.com/previews/sb-admin/
+https://flatuicolors.com/
+*/
+body {
+  font: 400 15px Lato, sans-serif;
+  line-height: 1.8;
+  color: #818181;
+}
+
+.jumbotron {
+      background-color: #00a8ff; 
+      color: #ffffff;
+      font-family: Montserrat, sans-serif;
+      padding: 100px 25px;
+}
+
+.navbar {
+  font-family: Montserrat, sans-serif;
+}
+
