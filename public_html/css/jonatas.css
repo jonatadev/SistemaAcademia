@@ -7,6 +7,8 @@ Exemplos:
 https://adminlte.io/themes/AdminLTE/index2.html
 https://startbootstrap.com/previews/sb-admin/
 https://flatuicolors.com/
+
+https://rawgit.com/MrRio/jsPDF/master/docs/index.html
 */
 body {
   font: 400 15px Lato, sans-serif;
@@ -18,7 +20,7 @@ body {
       background-color: #00a8ff; 
       color: #ffffff;
       font-family: Montserrat, sans-serif;
-      padding: 100px 25px;
+      padding: 10px 10px;
 }
 
 .navbar {
