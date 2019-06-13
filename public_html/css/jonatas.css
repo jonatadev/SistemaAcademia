@@ -10,6 +10,8 @@ https://flatuicolors.com/
 
 https://rawgit.com/MrRio/jsPDF/master/docs/index.html
 http://responsivetesttool.com/
+Google charts
+https://www.w3schools.com/howto/howto_google_charts.asp
 
 */
 body {
@@ -19,10 +21,11 @@ body {
 }
 
 .jumbotron {
-      background-color: #00a8ff; 
+      margin-top: 10px;
       color: #ffffff;
       font-family: Montserrat, sans-serif;
       padding: 10px 10px;
+      background-image: url(../img/fundo.PNG);
 }
 
 .navbar {
