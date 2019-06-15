@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title></title>
+    <title>Gerenciar produtos</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -37,10 +37,10 @@
           </div>
           <ul class="nav navbar-nav">
             <li><a href="jonatas.html">Jonatas</a></li>
+
           </ul>
         </div>
       </nav> 
-
       <div class="row">
         <div class="col-sm-2">
           <ul class="nav nav-pills nav-stacked">
@@ -54,51 +54,81 @@
         </div>
 
         <div class="col-sm-10">
+
           <div class="panel panel-primary">
             <div class="panel-heading">
-              <h3 class="panel-title">Gerenciar Equipamentos</h3>
+              <h3 class="panel-title">Digite o nome ou código do produto a ser alterado ou excluído.</h3>
+            </div>
+            <div class="panel-body">
+              <div class="row">
+
+                <div class="col-sm-12">
+                  <div class="form-group">
+                    <label for="pwd">Nome do produto:</label>
+                    <div class ="input-group">
+                      <span class="input-group-addon"><i class="glyphicon glyphicon-edit"></i></span>
+                      <input type="text" class="form-control" id="pwd" >
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-12">
+                  <div class="form-group">
+                    <div class ="input-group">
+                      <button type="button" class="btn btn-primary">Buscar...</button>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="panel panel-primary">
+            <div class="panel-heading">
+              <h3 class="panel-title">Gerenciar produtos</h3>
             </div>
             <div class="panel-body">
               <div class="row">
                 <div class="col-sm-6">
                   <div class="form-group">
-                    <label for="email">Código do equipamento :</label>
-                    <div class ="input-group">
-                      <span class="input-group-addon"><i class="glyphicon glyphicon-barcode"></i></span>
-                      <input type="email" class="form-control" id="cod" placeholder="ex #9352708">
-                    </div>
-                  </div>
-                </div> 
-
-                <div class="col-sm-6">
-                  <div class="form-group">
-                    <label for="pwd">Nome do equipamento:</label>
+                    <label for="nome">Nome produto: :</label>
                     <div class ="input-group">
                       <span class="input-group-addon"><i class="glyphicon glyphicon-edit"></i></span>
-                      <input type="text" class="form-control" id="pwd" placeholder="esteira eletrica,supino">
+                      <input type="text" class="form-control" id="cod" placeholder="Whey protein">
+                    </div>
+                  </div>
+                </div>  
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <label for="pwd">Valor de custo:</label>
+                    <div class ="input-group">
+                      <span class="input-group-addon">R$</span>
+                      <input type="text" class="form-control" id="pwd">
                     </div>
                   </div>
                 </div>
 
                 <div class="col-sm-6">
                   <div class="form-group">
-                    <label for="pwd">Quantidade atual:</label>
+                    <label for="pwd">Valor de venda:</label>
                     <div class="input-group">
-                      <span class="input-group-addon"><i class="glyphicon glyphicon-edit"></i></span>
-                      <input type="text" class="form-control" id="pwd" placeholder="total de equipamentos em uso">
+                      <span class="input-group-addon">R$</span>
+                      <input type="text" class="form-control" id="pwd">
                     </div>
                   </div>
-                </div>
+                </div>     
 
                 <div class="col-sm-6">
                   <div class="form-group">
-                    <label for="pwd">Localização do Equipamento:</label>
+                    <label for="pwd">Total em estoque:</label>
                     <div class="input-group">
                       <span class="input-group-addon"><i class="glyphicon glyphicon-edit"></i></span>
-                      <input type="text" class="form-control" id="pwd" placeholder="sala musculação l12">
+                      <input type="text" class="form-control" id="pwd">
                     </div>                    
                   </div>
-                </div>
+                </div>  
+
                 <div class="col-sm-6">
                   <div class="form-group">
                     <label for="pwd">Data de Aquisição:</label>
@@ -107,6 +137,16 @@
                       <input type="text" class="form-control" id="datepicker">
                     </div>                    
                   </div>
+                </div>  
+
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <label for="descr">Indicações de uso:</label>
+                    <div class="input-group">
+                      <span class="input-group-addon"><i class="glyphicon glyphicon-edit"></i></span>
+                      <textarea class="form-control"></textarea>
+                    </div>
+                  </div>
                 </div>
 
                 <div class="col-sm-6">
@@ -114,84 +154,79 @@
                     <label for="email">Nome do fornecedor :</label>
                     <div class="input-group">
                       <span class="input-group-addon"><i class="glyphicon glyphicon-edit"></i></span>
-                      <input type="email" class="form-control" id="email" placeholder="bodysport,lifehealth">
+                      <input type="email" class="form-control" id="email">
                     </div>                    
                   </div>
-                </div>
+                </div> 
+
                 <div class="col-sm-6">
                   <div class="form-group">
-                    <label for="tel">Telefone do fornecedor :</label>
-                    <div class="input-group">
-                      <span class="input-group-addon"><i class="glyphicon glyphicon-phone"></i></span>
-                      <input type="text" class="form-control" id="tel" placeholder="(##)#####-##" />
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-6">
-                  <div class="form-group">
-                    <label for="email">Email do fornecedor :</label>
+                    <label for="tel">Email fornecedor:</label>
                     <div class="input-group">
                       <span class="input-group-addon">@</span>
-                      <input type="email" class="form-control" id="email" placeholder="nomeusuario@dominio.com">
+                      <input type="text" class="form-control" id="valor" />
                     </div>
                   </div>
                 </div>
+
                 <div class="col-sm-6">
                   <div class="form-group">
-                    <label for="pwd">Fabricante:</label>
+                    <label for="localizacao">Localização :</label>
+                    <div class="input-group">
+                      <span class="input-group-addon"><i class="glyphicon glyphicon-edit"></i></span>
+                      <input type="text" class="form-control" id="localizacao">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <label for="categoria">Categoria:</label>
                     <div class="input-group">
                       <span class="input-group-addon"><i class="glyphicon glyphicon-edit"></i></span>
                       <select class="form-control">
-                        <option>Zyma</option>
-                        <option>Iron Health</option>
-                        <option>Maga Anilhas</option>
-                        <option>Sport Action</option>
-                        <option>Metal Gym</option>
+                        <option>Whey Protein</option>
+                        <option>Energeticos</option>
+                        <option>Proteinas</option>
+                        <option>Emagrecimento</option>
+                        <option>Saúde e Bem-Estar</option>
+                        <option>Pré-Treinos</option>
+                        <option>Energia e Resistência</option>
+                        <option>Acessorios Esportivos</option>
                       </select>
                     </div>  
                   </div>
-                </div>
+                </div>  
 
                 <div class="col-sm-6">
                   <div class="form-group">
-                    <label for="pwd">Email do fabricante:</label>
-                    <div class="input-group">
-                      <span class="input-group-addon">@</span>  
-                      <input type="email" class="form-control" id="pwd" placeholder="nomeusuario@dominio.com">
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-sm-6">
-                  <div class="form-group">
-                    <label for="descr">Descrição do equipamento:</label>
-                    <div class="input-group">
-                      <span class="input-group-addon"><i class="glyphicon glyphicon-edit"></i></span>
-                      <textarea class="form-control" placeholder="breve descrição da utilidade do equipamento"></textarea>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-sm-6">
-                  <div class="form-group">
-                    <label for="descr">Registro de falhas (Apresentou alguma falha ?)</label>
+                    <label for="pwd">Marca:</label>
                     <div class="input-group">
                       <span class="input-group-addon"><i class="glyphicon glyphicon-edit"></i></span>  
-                      <textarea class="form-control"
-                                data-toggle="tooltip" data-placement="top"
-                                title="Breve descrição do problema apresentado."></textarea>
-                    </div>  
+                      <input type="text" class="form-control" id="pwd">
+                    </div>
                   </div>
                 </div>
 
-                <div class="col-sm-3">
-                  <button type="button" class="btn btn-primary">Salvar</button>
+                <div class="col-sm-6">  
+                  <div class="form-group">
+                    <label for="descr">Foto do produto.</label>
+                    <input type="file" class="form-control">
+                  </div>
                 </div>
-              </div>
-            </div>
+
+                <div class="col-sm-6">
+                  <button type="button" class="btn btn-primary">Atualizar</button>
+                </div>
+                <div class="col-sm-6">
+                  <button type="button" class="btn btn-danger">Excluir</button>
+                </div>
+
+              </div> <!-- end row -->
+
+            </div> 
           </div>
         </div>
       </div>
-    </div>
   </body>
 </html>
